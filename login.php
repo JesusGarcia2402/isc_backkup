@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php echo $message; ?>
             <form method="POST" action="login.php">
                 <div class="form-group">
-                    <label for="usuario">Usuario:</label>
+                    <label for="usuario">Usuario Del Dueño de Esto:</label>
                     <input type="text" name="usuario" id="usuario" required>
                 </div>
                 <div class="form-group">
