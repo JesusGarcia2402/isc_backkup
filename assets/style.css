@@ -1,0 +1,238 @@
+/* ----- General ----- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* ----- Encabezado institucional ----- */
+.encabezado-institucional {
+    background-color: #0b0b5f; /* azul marino */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 6px solid #ffc107; /* dorado */
+    flex-wrap: wrap;
+}
+
+.logo-izquierdo img,
+.logo-derecho img {
+    height: 60px;
+    max-width: 100%;
+}
+
+.titulo-institucion {
+    flex: 1;
+    text-align: center;
+}
+
+.encabezado-institucional h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.encabezado-institucional h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #cce7ff;
+}
+
+/* ----- Contenedor principal ----- */
+.container {
+    max-width: 900px;
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Formularios ----- */
+h1, h2 {
+    text-align: center;
+    color: #0b0b5f;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ----- Botones ----- */
+.btn {
+    background-color: #0b0b5f;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0b0b5f;
+}
+
+.btn.primary {
+    background-color: #0b0b5f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn.primary:hover {
+    background-color: #0b0b5f;
+}
+
+.btn.small {
+    padding: 6px 15px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.btn-remove-asesor {
+    margin-left: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-remove-asesor:hover {
+    background-color: #c9302c;
+}
+
+/* ----- Alertas ----- */
+.alert {
+    padding: 12px 20px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* ----- Selectores dinámicos ----- */
+.asesores-container,
+.comision-revisora {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.asesor-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ----- Acciones del formulario ----- */
+.form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-actions button {
+    margin: 0 10px;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+    .encabezado-institucional {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulo-institucion {
+        margin: 10px 0;
+    }
+}
+
+
+
+.info-oficio-extra {
+    margin-top: 20px;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.info-oficio-extra label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.info-oficio-extra input,
+.info-oficio-extra textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}

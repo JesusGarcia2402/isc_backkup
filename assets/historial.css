@@ -1,0 +1,107 @@
+/* Fondo y tipografía */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado con logos */
+.header-login {
+    background-color: #0b0b5f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+.header-login img {
+    height: 60px;
+}
+
+.header-login .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #0b0b5f;
+    margin-bottom: 30px;
+}
+
+/* Botón regresar */
+.btn.back {
+    background: linear-gradient(to right, #0b0b5f, #0b0b5f);
+    color: #ffffff;
+    padding: 10px 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.btn.back:hover {
+    opacity: 0.85;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+    background-color: #0b0b5f;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Mensaje cuando no hay registros */
+.alert.info {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+    font-style: italic;
+    color: #0b0e61;
+    border-left: 4px solid #00e0ff;
+    border-radius: 5px;
+}

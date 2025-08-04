@@ -1,0 +1,134 @@
+/* Fondo y fuente base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+/* Encabezado con logos */
+.header-login {
+    background-color: #0b0b5f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+.header-login img {
+    height: 60px;
+}
+
+.header-login .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #0b0b5f;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Mensajes */
+.alert {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert.error {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.alert.success {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #eee;
+    color: #111;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(11, 11, 95, 0.2);
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #0b0b5f;
+    color: #fff;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #06063a;
+}
+
+.btn.back {
+    background-color: #0b0b5f;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .header-login {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

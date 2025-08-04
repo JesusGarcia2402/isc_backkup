@@ -1,0 +1,378 @@
+:root {
+    --bg: #f5f7fa;
+    --header: #00205b;
+    --accent: #00205b;
+    --accent-hover: #0040a8;
+    --highlight: #ffb400;
+    --text: #111;
+    --subtext: #666;
+    --panel: #e6ecf4;
+    --card: #ffffff;
+    --border: #cbd5e1;
+    --shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ENCABEZADOS */
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--accent);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+h4, h5, h6 {
+    color: var(--accent);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* BOTONES */
+.btn.back,
+.btn-secondary {
+    background-color: var(--accent);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    box-shadow: 0 3px 10px var(--shadow);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn.back:hover,
+.btn-secondary:hover {
+    background-color: var(--accent-hover);
+}
+
+/* TARJETAS */
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 25px 20px;
+    box-shadow: 0 6px 24px var(--shadow);
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 10px 30px rgba(0, 32, 91, 0.1);
+}
+
+.card h6 {
+    font-size: 16px;
+    color: var(--subtext);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.card h2 {
+    font-size: 40px;
+    color: var(--accent);
+    margin: 0;
+    font-weight: bold;
+}
+
+.card .fa-2x {
+    margin-bottom: 10px;
+}
+
+/* GRÁFICAS */
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 220px;
+    margin-top: 15px;
+}
+
+/* BARRA DE PROGRESO */
+.progress {
+    height: 28px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+/* LISTA DE TITULADOS */
+.lista-titulados {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-titulados li {
+    background-color: var(--panel);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+.lista-titulados li span.nombre {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.lista-titulados li span.fecha {
+    font-style: italic;
+    color: var(--subtext);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .card h2 {
+        font-size: 28px;
+    }
+    .card .fa-2x {
+        font-size: 1.5rem;
+    }
+    .progress {
+        height: 24px;
+    }
+}
+
+
+/* Estilo de tarjetas en 2 columnas */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+/* Tarjeta general */
+.card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #00205b;
+    margin-bottom: 12px;
+}
+
+.card .big-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0040a8;
+    margin: 0;
+}
+
+/* Stats internos */
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f0f4fa;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.stat-item .number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00205b;
+}
+
+.stat-item .label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Últimos titulados */
+.lista-titulados {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-titulados li {
+    display: flex;
+    justify-content: space-between;
+    background: #f9fbfd;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.lista-titulados span.nombre {
+    font-weight: bold;
+    color: #00205b;
+}
+
+.lista-titulados span.control,
+.lista-titulados span.fecha {
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card .big-number {
+        font-size: 36px;
+    }
+}
+.tabla-titulados {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.fila.encabezado {
+    font-weight: bold;
+    background: #dbeafe;
+    color: #00205b;
+}
+
+.distribucion-modalidades h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.titulo-dashboard {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+.resumen-card {
+    background-color: #e6f4f9;
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.resumen-card .numero {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin: 0.3rem 0;
+}
+
+.resumen-card .detalle {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.lista-modalidades {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-modalidades li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-ultimos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-ultimos th, .tabla-ultimos td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabla-ultimos th {
+    background-color: #f2f2f2;
+    color: #003366;
+}
+.btn-detalle {
+    background-color: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-detalle:hover {
+    background-color: var(--accent-hover);
+}
+
+.tabla-detalle {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-detalle th,
+.tabla-detalle td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.tabla-detalle th {
+    background-color: #e6ecf4;
+    color: var(--accent);
+    text-transform: uppercase;
+}

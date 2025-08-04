@@ -1,0 +1,210 @@
+/* Fondo y tipografía */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 50, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #0b0b5f;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Botón volver */
+.btn.back {
+    display: inline-block;
+    margin-bottom: 25px;
+    background: #0b0b5f;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn.back:hover {
+    background-color: #001c49;
+}
+
+/* Información del alumno */
+.alumno-info {
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.alumno-info h2 {
+    margin-top: 0;
+    color: #0b0b5f;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.alumno-info p {
+    margin: 10px 0;
+    color: #0b0b5f;
+    font-size: 15px;
+}
+
+.alumno-info p strong {
+    color: #000000;
+}
+
+/* Contenedor de pasos */
+.proceso-container {
+    text-align: center;
+}
+
+.proceso-circulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Círculo */
+.circulo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.circulo {
+    width: 130px;
+    height: 130px;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    text-align: center;
+    box-shadow: #000;
+}
+
+.circulo h3 {
+    font-size: 15px;
+    color: #000000;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.circulo:hover {
+    transform: scale(1.05);
+    box-shadow: #f0f0f0;
+}
+
+/* Círculo completado */
+.circulo.completado {
+    border: 3px solid #0b0b5f;
+    background-color: #ffffff;
+}
+
+/* Alertas */
+.alert {
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.alert.info {
+    background-color: #0b0b5f;
+    color: #fff;
+}
+
+.alert.error {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+/* Encabezado institucional */
+.header-login {
+    background-color: #0b0b5f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+.header-login img {
+    height: 60px;
+}
+
+.header-login .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .circulo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circulo h3 {
+        font-size: 13px;
+    }
+}
+
+
+.arrow {
+  font-size: 24px;
+  color: #333;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 30px auto;
+}
+.progress-ring__background {
+  fill: transparent;
+  stroke: #eee;
+  stroke-width: 10;
+}
+.progress-ring__circle {
+  fill: transparent;
+  stroke: #3498db;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 0.5s;
+}
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+}

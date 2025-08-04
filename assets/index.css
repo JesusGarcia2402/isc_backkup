@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff; /* Fondo claro */
+    color: #000; /* Texto oscuro */
+}
+
+header {
+    background: #0c0c5a; /* Azul marino */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco */
+}
+
+.logo span {
+    color: #ffc107; /* Dorado */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul li a:hover {
+    background: #ffc107; /* Dorado al pasar el mouse */
+    color: #0c0c5a; /* Azul marino */
+}
+
+.hero {
+    background-color: #f2f2f2; /* Eliminamos imagen y ponemos fondo claro */
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #0c0c5a; /* Azul marino */
+}
+
+.hero p {
+    font-size: 20px;
+    color: #333333; /* Texto gris oscuro */
+}
+.header-principal {
+    background-color: #0a0a56;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.logo-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo-titulo span {
+    color: #ffc107;
+}
+
+.nav-principal {
+    background-color: #0a0a56;
+    padding: 10px 20px;
+}
+
+.nav-principal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-principal ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-principal ul li a:hover {
+    background-color: #ffc107;
+    color: #0a0a56;
+}

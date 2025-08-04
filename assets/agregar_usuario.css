@@ -1,0 +1,113 @@
+/* Fondo y fuente general */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado con logos */
+.header-login {
+    background-color: #0b0b5f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+.header-login img {
+    height: 60px;
+}
+
+.header-login .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b0b5f;
+}
+
+/* Etiquetas e inputs */
+label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Botones */
+button[type="submit"],
+.btn {
+    background: linear-gradient(to right, #0b0b5f, #0b0b5f);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+button[type="submit"]:hover,
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn.back {
+    background: linear-gradient(to right, #0b0b5f, #0b0b5f);
+    color: #f1f1f1;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Mensajes de alerta */
+.alert.error {
+    background-color: #ffffff;
+    color: #0b0b5f;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}

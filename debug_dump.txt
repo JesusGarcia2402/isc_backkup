@@ -1,0 +1,3 @@
+Resultado: 0
+Comando: "C:\xampp\mysql\bin\mysqldump.exe" --user=root isc > "C:\xampp\htdocs\isc_backkup/respaldos/respaldo_isc_2025-06-25_00-57-22.sql"
+Archivo: C:\xampp\htdocs\isc_backkup/respaldos/respaldo_isc_2025-06-25_00-57-22.sql
